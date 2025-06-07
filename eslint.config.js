@@ -25,4 +25,11 @@ export default tseslint.config(
       ],
     },
   },
+  {
+    rules: {
+      'no-undef': 'error',
+      'no-unused-vars': 'error',
+      'react/prop-types': 'off',
+    },
+  },
 )
