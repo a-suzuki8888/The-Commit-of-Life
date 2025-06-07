@@ -20,3 +20,11 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
+#Node modules
+node_modules/
+#Dist folder
+dist/
+#Environment variables
+.env
+#Ignore all files in the .DS_Store
+.DS_Store
