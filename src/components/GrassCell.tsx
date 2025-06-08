@@ -1,20 +1,18 @@
 // src/components/GrassCell.tsx
-import React from 'react';
-
 type GrassCellProps = {
   level: number;
 };
 
 export default function GrassCell({ level }: GrassCellProps) {
   const levelToColor = [
-    'bg-white',
-    'bg-green-200',
-    'bg-green-400',
-    'bg-green-600',
-    'bg-green-800',
+    'bg-zinc-200', // 0
+    'bg-green-200', // 1
+    'bg-green-400', // 2
+    'bg-green-600', // 3
+    'bg-green-800', // 4
   ];
 
   return (
-    <div className={`w-4 h-4 m-0.5 ${levelToColor[level] || 'bg-white'}`} />
+    <div className={`w-3 h-3 sm:w-4 sm:h-4 m-[1px] ${levelToColor[level]}`} />
   );
 }
